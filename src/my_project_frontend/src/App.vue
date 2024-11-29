@@ -24,12 +24,12 @@ getChat()
     <br />
     <br />
     <form action="#" @submit="handleSubmit">
-      <label for="msg">Enter your msg: &nbsp;</label>
+      <label for="msg">Enter your message: &nbsp;</label>
       <input id="msg" alt="msg" type="text" />
-      <button type="submit">Click Me!</button>
+      <button type="submit">Send message</button>
     </form>
     <section id="displayChat">
-      <div>{{ displayChat }}</div>
+      <div v-for="msg in displayChat">{{ msg }}</div>
     </section>
   </main>
 </template>
